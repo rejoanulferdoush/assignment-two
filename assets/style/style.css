@@ -386,6 +386,7 @@ header {
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
   padding: 3px;
+  flex-wrap: wrap;
 }
 
 .form-set input[type="email"] {
@@ -458,6 +459,25 @@ footer {
   .left-text-content {
     padding: 0;
   }
+  input[type="submit"] {
+    flex: 1;
+  }
+}
+
+@media only screen and (max-width: 922px) {
+  .form-set input[type="email"]:focus {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .form-set input[type="email"]:focus + input[type="submit"] {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
 }
 
 /* Mobile */
@@ -519,5 +539,18 @@ footer {
 
   section {
     padding: 50px 0;
+  }
+
+  .newsletter-con {
+    padding: 20px 10px;
+    text-align: center;
+  }
+
+  .newsletter-con .section-title-text {
+    margin-bottom: 0;
+  }
+
+  .newsletter-con .title-primary {
+    margin-bottom: 15px;
   }
 }
