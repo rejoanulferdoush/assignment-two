@@ -531,6 +531,11 @@ footer {
     left: 0;
   }
 
+  .sponsor-imgs {
+    display: flex;
+    flex-direction: column;
+  }
+
   .fact-counts,
   .sponsor-imgs {
     gap: 40px;
